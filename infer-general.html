@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/infer-general.css">
+    <link rel="stylesheet" href="./css/cssRest.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/BOM.js"></script>
+    <title>Document</title>
+    <style>
+        .breadcrumb-item+.breadcrumb-item::before {
+            display: inline-block;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: #000;
+            content: ">";
+        }
+        .active{
+            color: #003f87 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list-img">
+        <img src="./img/sw.png" alt="" class="w-100 h-100">
+    </div>
+    <div class="in-nav clear">
+        <div class="center">
+            <div class="nav-logo">
+                <a href="./infer-index.html">
+                <img src="./img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="nav-list">
+                <ul class="nav-list-one">
+                    <li class="nav-li">
+                        <a href="infer-general.html" class="nav-a">学院概况</a>
+                        <div>
+                            <ul>
+                                <li><a href="infer-general.html">基本情况</a></li>
+                                <li><a href="">发展历程</a></li>
+                                <li><a href="">组织机构</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-li">
+                        <a href="infer-news.html" class="nav-a">学院动态</a>
+                        <div>
+                            <ul>
+                                <li><a href="">学术新闻</a></li>
+                                <li><a href="">教学动态</a></li>
+                                <li><a href="news-item.html">工作动态</a></li>
+                                <li><a href="">合作交流</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-li">
+                        <a href="infer-message.html" class="nav-a">学院信息</a>
+                        <div>
+                            <ul>
+                                <li><a href="">活动预告</a></li>
+                                <li><a href="message-item.html">讲座信息</a></li>
+                                <li><a href="">交流信息</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-li">
+                        <a href="./infer-notic.html" class="nav-a">通知公告</a>
+                        <div>
+                            <ul>
+                                <li><a href="">工科声明</a></li>
+                                <li><a href="notic-item.html">媒体工科</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-li"><a href="./infer-recuit.html">招生就业</a></li>
+                    <div class="nav-list-input">
+                        <input type="text">
+                        <a href="">
+                            <img src="./img/icon-search.png" alt="">
+                        </a>
+                    </div>
+                    <li class="nav-li"><a href="">信息门户</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/BOM.js"></script>
+    <div class="list-nav clear">
+        <div class="center">
+            <div class="news-title">
+                学院概况
+                <p>School profile</p>
+            </div>
+            <!-- <div>学院信息</div>
+            <div class="breadcrumb bg-transparent mb-0">
+                <div class="breadcrumb-item"><a href="">学院概况</a></div>
+                <div class="breadcrumb-item"><a href="" class="active">基本情况</a></div>
+            </div> -->
+            <!-- <div class="more"><a href="">更多</a></div> -->
+        </div>
+    </div>
+    <div class="text">
+        <div class="center">
+            <div>
+                <h2>基本情况</h2>
+                <p class="mt-4">信息学院成立于2001年7月，是山西大学商务学院最早设置的教学单位之一。
+                    现有教职工65人，在编专职教师41人，其中教授、副教授24人，享受国家院特殊津贴2人，省级教学名师2人。</p> 
+                <p>学院现开设物联网工程、软件工程、电子信息科学与技术、网络工程、计算机科学与技术5个本科专业，拥有省级精品资源共享课等大量的优质教学资源，
+                    其中“信息网络实验教学中心”2014年获批为省级实验教学示范中心，信息安全实验室被评为山西省信息安全示范实验室，拥有专业实验室22个，
+                    校企共建协同育人实验室3个（大数据技术实验室、移动互联技术开发实验室、综合项目实训室），与达内时代科技集团有限公司、
+                    上海上嵌信息科技有限公司、上海杰普软件科技有限公司、山西思软科技有限公司等4家校外实训单位建立着长期稳定的合作关系。</p>
+                    <div class="image">
+                        <div>
+                            <img src="img/tedu01.jpg" alt="达内学习机房" class="w-100 h-100">
+                            <span>达内学习环境</span>
+                        </div>
+                        <div>
+                            <img src="img/tedu02.jpg" alt="" class="w-100 h-100">
+                            <span>达内授课机房</span>
+                        </div>
+                    </div>
+                <p class="mt-5">
+                    2017年以来，我院已与英国爱丁堡龙比亚大学、瓦尔多斯塔州立大学、美国中央密苏里大学等建立了国际合作关系。信息学院根据社会、行业对IT人才的培养需求，以“实现信息网络战略性新兴产业急需的应用技术型人才”的培养目标，突出任务驱动、项目教学两个特色，
+                    构建知识结构、能力结构、素质结构三维要素，采用理论教学、实验实训、扩充选修、第二课堂四个系统，全面推进应用型人才培养。
+                    到目前为止，已培养9100余名毕业生，逐步形成了就业率高、专业对口率高、就业质量高的发展趋势。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="./img/img11.png" alt="">
+        <div class="center">
+            <div class="left">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="zhong">
+                <a href="">国家教育部</a>					
+                <a href="">共产党员网</a>
+                <a href="">山西省教育厅</a>
+                <a href="">共产山西组工</a>
+            </div>
+            <div class="right">
+                <p>地址：山西省晋中市榆次区文华街369号 邮编：030619</p>
+                <p>联系电话：0351-5678210 5678213 传真：0351-5678211</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

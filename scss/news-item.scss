@@ -1,0 +1,213 @@
+.in-nav {
+    z-index: 10;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    .center {
+        .nav-logo {
+            width: 340px;
+            float: left;
+            line-height: 80px;
+
+            img {
+                height: 46px;
+            }
+        }
+
+        .nav-list {
+            width: 860px;
+            float: left;
+
+            .nav-list-one {
+                width: 860px;
+                height: 80px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .nav-li{
+                    height: 80px;
+                    line-height: 80px;
+                    position: relative;
+                    &:hover>div{
+                        display: block;
+                    }
+                    a {
+                        font-weight: bold;
+                        font-family: "微软雅黑";
+                        color: white;
+                        font-size: 16px;
+                        text-decoration: none;
+                        padding-bottom: 5px;
+                        transition: all 0.1s linear;
+                        &:hover{
+                            font-size: 20px;
+                        }
+                    }
+
+                    .nav-a {
+                        font-weight: bold;
+                        font-family: "微软雅黑";
+                        color: white;
+                        font-size: 16px;
+                        text-decoration: none;
+                        padding-bottom: 5px;
+
+                        // &:hover {
+                        //     border-bottom: 3px solid #94070a;
+                        // }
+
+                        // &:hover:before {
+                        //     background-color: #94070a;
+                        //     content: "";
+                        //     width: 2px;
+                        //     height: 20px;
+                        //     position: absolute;
+                        //     top: 58px;
+                        //     left: 30px;
+                        // }
+                    }
+                    div {
+                        display: none;
+                        width: 150px;
+                        position: absolute;
+                        top: 80px;
+                        left: -40px;
+                        background-color: #ffffff;
+                        border-top: 5px solid #003f87;
+                        text-align: center;
+                        // opacity: 0;
+                        transition: all 1s cubic-bezier(0.94, 0.06, 0.05, 0.95);
+
+                        li{
+                            height: 40px;
+                            line-height: 40px;
+                        }
+                        a {
+                            font-weight: bold;  
+                            font-family: "微软雅黑";
+                            color: #003f87;
+                            font-size: 16px;
+                            line-height: 30px;
+                            border: 0 !important;
+                            text-decoration: none;
+                            padding-top: 5px;
+                        }
+
+                    }
+                }
+
+                .nav-list-input {
+                    background: transparent;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    text-align: center;
+
+                    input {
+                        background: transparent;
+                        width: 130px;
+                        height: 30px;
+                        padding-left: 3px;
+                        color: white;
+                    }
+
+                    img {
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+//bg-list部分// 面包屑导航
+.list-nav{
+    margin-top: 60px;
+    .center{
+        display: flex;
+        justify-content: space-between;
+        .news-title{
+            padding-left: 20px;
+            font-size: 44px;
+            color: #003f87;
+            font-weight: bold;
+            font-family: "微软雅黑";
+            position: relative;
+            &::before{
+                content: "";
+                width: 4px;
+                height: 80px;
+                position: absolute;
+                top: 10px;
+                left: 0px;
+                background-color: #003f87;
+                border-radius: 5px;
+            }
+            p{
+                font-size: 14px;
+                color: black;
+                font-weight: 600;
+                
+            }
+        }
+        .more{
+            line-height: 100px;
+            a{
+                font-size: 14px;
+                color: black;
+                font-weight: bold;
+                font-family: "微软雅黑"; 
+            }
+        }
+    }
+}
+.text{
+    .center{
+        div{
+            margin: auto;
+            width: 90%;
+            text-align: center;
+            background-color: #f1f8ff;
+            border-radius: 5px;
+            // overflow: hidden;
+            h2{
+                margin-top: 40px;
+                padding-top: 40px;
+                color: #000000;
+                font-weight: bold;
+                font-family: "微软雅黑"; 
+                padding-bottom: 20px;
+                border-bottom: 3px solid white;
+            }
+            .image{
+                display: flex;
+                justify-content: space-around;
+                div{
+                    width: 400px;
+                    height: 300px;
+                    img{
+                        display: block;
+
+                    }    
+                    span{
+                        margin-top: 10px;
+                        display: block;
+                        color: black;
+                        font-family: "楷体";
+                        font-size: 14px;
+                    }
+                }
+            }
+            p{
+                font-size: 20px;
+                text-indent: 2em;
+                text-align: left;   
+                padding: 5px 80px; 
+                padding-bottom: 30px;
+                line-height: 35px; 
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@import "./footer.scss"

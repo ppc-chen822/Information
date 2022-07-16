@@ -1,0 +1,37 @@
+/* 需要去掉默认样式的元素提前重置 */
+*{
+    /* 去掉所有元素内外边距 */
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none !important;
+    /* 去掉a标签的下划线 */
+}
+ul,ol{
+    list-style: none;
+}
+input{
+    /* 去掉input的默认样式，轮廓线，边框 */
+    outline: none;
+    border:0;
+}
+/* 去掉按钮的边框 */
+button{
+    border:0;
+}
+/* html默认字号 */
+html{
+    font-size: 16px;
+}
+/* 专门定义居中区域宽度 */
+.center{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 专门定义清楚浮动的类名 共需要清楚坍塌的父元素使用 */
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}

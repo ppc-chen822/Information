@@ -1,0 +1,504 @@
+@charset "UTF-8";
+.in-zy {
+  width: 30px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.in-zsf li {
+  width: 20px;
+  height: 3px;
+  background-color: #003f87;
+}
+
+.in-zsf .active {
+  background-color: white;
+}
+
+.in-nav {
+  z-index: 10;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.in-nav .center .nav-logo {
+  width: 340px;
+  float: left;
+  line-height: 80px;
+}
+.in-nav .center .nav-logo img {
+  height: 46px;
+}
+.in-nav .center .nav-list {
+  width: 860px;
+  float: left;
+}
+.in-nav .center .nav-list .nav-list-one {
+  width: 860px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.in-nav .center .nav-list .nav-list-one .nav-li {
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+}
+.in-nav .center .nav-list .nav-list-one .nav-li:hover > div {
+  display: block;
+}
+.in-nav .center .nav-list .nav-list-one .nav-li a {
+  font-weight: bold;
+  font-family: "微软雅黑";
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding-bottom: 5px;
+  transition: all 0.1s linear;
+}
+.in-nav .center .nav-list .nav-list-one .nav-li a:hover {
+  font-size: 20px;
+}
+.in-nav .center .nav-list .nav-list-one .nav-li .nav-a {
+  font-weight: bold;
+  font-family: "微软雅黑";
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.in-nav .center .nav-list .nav-list-one .nav-li div {
+  display: none;
+  width: 150px;
+  position: absolute;
+  top: 80px;
+  left: -40px;
+  background-color: #ffffff;
+  border-top: 5px solid #003f87;
+  text-align: center;
+  transition: all 1s cubic-bezier(0.94, 0.06, 0.05, 0.95);
+}
+.in-nav .center .nav-list .nav-list-one .nav-li div li {
+  height: 40px;
+  line-height: 40px;
+}
+.in-nav .center .nav-list .nav-list-one .nav-li div a {
+  font-weight: bold;
+  font-family: "微软雅黑";
+  color: #003f87;
+  font-size: 16px;
+  line-height: 30px;
+  border: 0 !important;
+  text-decoration: none;
+  padding-top: 5px;
+}
+.in-nav .center .nav-list .nav-list-one .nav-list-input {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+}
+.in-nav .center .nav-list .nav-list-one .nav-list-input input {
+  background: transparent;
+  width: 130px;
+  height: 30px;
+  padding-left: 3px;
+  color: white;
+}
+.in-nav .center .nav-list .nav-list-one .nav-list-input img {
+  padding: 5px;
+}
+
+.body-one .center h2 {
+  text-align: center;
+  font-family: "微软雅黑";
+  font-weight: bolder;
+  padding-top: 60px;
+  position: relative;
+  color: #003f87;
+}
+.body-one .center h2::after {
+  content: "";
+  position: absolute;
+  top: 110px;
+  right: 580px;
+  width: 40px;
+  height: 3px;
+  background-color: #003f87;
+}
+.body-one .center .body-new {
+  margin-top: 50px;
+}
+.body-one .center .body-new .new-left {
+  position: relative;
+  float: left;
+  width: 590px;
+  height: 400px;
+}
+.body-one .center .body-new .new-left:hover > span {
+  height: 100%;
+}
+.body-one .center .body-new .new-left span {
+  width: 100%;
+  height: 13%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.5s linear;
+}
+.body-one .center .body-new .new-left span .in-frist {
+  padding-left: 5px;
+  padding-top: 15px;
+}
+.body-one .center .body-new .new-left span .in-frist a {
+  font-family: "微软雅黑";
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+.body-one .center .body-new .new-left span .in-last {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.body-one .center .body-new .new-left span .in-last a {
+  font-family: "微软雅黑";
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+.body-one .center .body-new .new-right {
+  width: 590px;
+  height: 400px;
+  float: right;
+}
+.body-one .center .body-new .new-right div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.body-one .center .body-new .new-right div div {
+  width: 288px;
+  height: 192px;
+  position: relative;
+}
+.body-one .center .body-new .new-right div div:hover > span {
+  height: 100%;
+}
+.body-one .center .body-new .new-right div div span {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.5s linear;
+  overflow: hidden;
+}
+.body-one .center .body-new .new-right div div span .in-frist {
+  padding-left: 5px;
+  padding-top: 10px;
+}
+.body-one .center .body-new .new-right div div span .in-frist a {
+  font-family: "微软雅黑";
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+.body-one .center .body-new .new-right div div span .in-last {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.body-one .center .body-new .new-right div div span .in-last a {
+  font-family: "微软雅黑";
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+.body-one .center .new-foot {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body-one .center .new-foot a {
+  color: #003f87;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "微软雅黑";
+  border: 2px solid #003f87;
+  border-radius: 5px;
+  padding-top: 3px;
+}
+
+.body-second {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 60px 0;
+}
+.body-second .center {
+  display: flex;
+  justify-content: space-between;
+}
+.body-second .center .second-left {
+  width: 50px;
+  height: 600px;
+}
+.body-second .center .second-left div .text-top {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 32px;
+  font-family: "微软雅黑";
+  font-weight: bolder;
+  color: #ffffff;
+}
+.body-second .center .second-left div .text-bottom {
+  margin-top: 150px;
+  text-align: center;
+  position: relative;
+}
+.body-second .center .second-left div .text-bottom i::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: #ffffff;
+  top: -30px;
+  right: 30px;
+}
+.body-second .center .second-left div .text-bottom a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "微软雅黑";
+  letter-spacing: 12px;
+  text-decoration: none;
+}
+.body-second .center .second-right {
+  width: 1070px;
+  height: 600px;
+}
+.body-second .center .second-right div {
+  display: flex;
+  justify-content: space-between;
+}
+.body-second .center .second-right div div {
+  width: 260px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+.body-second .center .second-right div div:hover > img {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.body-second .center .second-right div div img {
+  transition: all 0.6s linear;
+}
+.body-second .center .second-right div div p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.body-second .center .second-right div div p .a-first {
+  float: left;
+  display: block;
+  width: 24px;
+  height: 100%;
+  font-size: 24px;
+  padding: 20px 20px;
+  color: #ffffff;
+  line-height: 110%;
+}
+.body-second .center .second-right div div p .a-second {
+  float: right;
+  color: white;
+  display: block;
+  width: 16px;
+  font-size: 16px;
+  margin-top: 480px;
+  padding-right: 40px;
+  line-height: 110%;
+  position: relative;
+}
+.body-second .center .second-right div div p .a-second::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 40px;
+  background-color: white;
+  top: 80px;
+  left: 7px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1200px);
+  }
+}
+.body-three .center .t-top {
+  height: 210px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.body-three .center .t-top .t-left {
+  flex: 1;
+}
+.body-three .center .t-top .t-left::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 50px;
+  background-color: #003f87;
+  top: 80px;
+  left: 180px;
+}
+.body-three .center .t-top .t-left div {
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+.body-three .center .t-top .t-left h2 {
+  font-family: "微软雅黑";
+  color: #003f87;
+  font-weight: bolder;
+}
+.body-three .center .t-top .t-center {
+  flex: 2;
+}
+.body-three .center .t-top .t-center p {
+  margin: auto;
+  font-family: "微软雅黑";
+  font-size: 12px;
+  color: #929292;
+}
+.body-three .center .t-top .t-right {
+  flex: 1;
+}
+.body-three .center .t-top .t-right a {
+  text-decoration: none;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  color: #003f87;
+  font-size: 14px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #003f87;
+}
+.body-three .t-img {
+  overflow: hidden;
+}
+.body-three .t-img .nei {
+  position: relative;
+  display: flex;
+  width: 200%;
+  animation: move 10s infinite linear;
+}
+.body-three .t-img .nei:hover {
+  animation-play-state: paused;
+}
+.body-three .t-img .nei li {
+  width: 12.5%;
+}
+.body-three .t-img .nei li > span {
+  font-family: "微软雅黑";
+  font-size: 12px;
+  font-weight: bold;
+}
+.body-three .t-img .nei li > img {
+  margin-top: 10px;
+  width: 95%;
+  transition: all 0.5s linear;
+}
+.body-three .t-img .nei li > img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.body-three .t-img .nei li > p {
+  margin-top: 20px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+.body-three .t-img .nei li > p a {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  text-decoration: none;
+  color: #003f87;
+}
+.body-three .t-img .nei li > div::before {
+  content: "";
+  width: 2px;
+  height: 40px;
+  background-color: #003f87;
+  position: absolute;
+  bottom: 1px;
+}
+.body-three .t-img .nei li > div div {
+  margin-left: 10px;
+}
+.body-three .t-img .nei li > div div span {
+  font-size: 12px;
+  color: #003f87;
+}
+
+.footer {
+  width: 100%;
+  height: 180px;
+  background-color: #003f87;
+  margin-top: 60px;
+  position: relative;
+}
+.footer > img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 60%;
+  bottom: 0;
+}
+.footer .center {
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+.footer .center .left {
+  flex: 1;
+  text-align: center;
+}
+.footer .center .left img {
+  width: 100%;
+  margin: 0 auto;
+}
+.footer .center .right {
+  flex: 1;
+}
+.footer .center .right p {
+  color: white;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  margin: auto;
+}
+.footer .center .zhong {
+  flex: 2;
+  text-align: center;
+}
+.footer .center .zhong a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  padding: 0 10px;
+}
+
+/*# sourceMappingURL=infer-index.css.map */
